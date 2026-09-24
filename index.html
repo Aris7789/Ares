@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ares Ziandika Rabbani — Web Development &amp; Visual Storytelling</title>
+  <meta name="description" content="Portfolio of Ares Ziandika Rabbani — web development, photography, videography and visual storytelling." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="navbar__brand">A/RES</a>
+  </header>
+
+  <nav class="scroll-indicator" aria-label="Section navigation">
+    <button type="button" class="scroll-indicator__item is-active" data-section="home" aria-current="true" aria-label="Go to Home section">
+      <svg class="scroll-indicator__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M4 11.5 12 4l8 7.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button type="button" class="scroll-indicator__item" data-section="about" aria-current="false" aria-label="Go to About section">
+      <svg class="scroll-indicator__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M7 5.5h10a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.5 9.5h7M8.5 13.5h7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button type="button" class="scroll-indicator__item" data-section="skills" aria-current="false" aria-label="Go to Skills section">
+      <svg class="scroll-indicator__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8L12 3Z" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button type="button" class="scroll-indicator__item" data-section="projects" aria-current="false" aria-label="Go to Projects section">
+      <svg class="scroll-indicator__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M4 7.5A2.5 2.5 0 0 1 6.5 5H17.5A2.5 2.5 0 0 1 20 7.5V16.5A2.5 2.5 0 0 1 17.5 19H6.5A2.5 2.5 0 0 1 4 16.5V7.5Z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 9h8M8 12h8M8 15h5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button type="button" class="scroll-indicator__item" data-section="contact" aria-current="false" aria-label="Go to Contact section">
+      <svg class="scroll-indicator__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <path d="M5 7.5A2.5 2.5 0 0 1 7.5 5h9A2.5 2.5 0 0 1 19 7.5v9A2.5 2.5 0 0 1 16.5 19h-9A2.5 2.5 0 0 1 5 16.5v-9Z" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 8.5 12 12l5-3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+
+      <div class="hero__content">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name">Ares</h1>
+        <p class="hero__statement">I build digital experiences.</p>
+
+        <p class="hero__dynamic">
+          <span class="hero__dynamic-label">I can help you with</span>
+          <span class="hero__dynamic-line">
+            <span class="hero__dynamic-text" id="dynamicText"></span><span class="hero__caret" aria-hidden="true"></span>
+          </span>
+        </p>
+        <p class="hero__metadata">WEB · PHOTO · VIDEO · EDITING</p>
+        <span class="sr-only">Skilled in web development, photography, videography, video editing and content ideas.</span>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="orbit-system">
+          <div class="orbit orbit--outer">
+            <span class="orbit__dot"></span>
+          </div>
+          <div class="orbit orbit--mid">
+            <span class="orbit__dot"></span>
+          </div>
+          <div class="orbit orbit--inner">
+            <span class="orbit__dot"></span>
+          </div>
+          <div class="hero__portrait">
+            <img class="hero__portrait-image" src="asset/halaman pertama1/logo untuk di lingkaran planet.jpe" alt="Ares logo" loading="eager" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-section__inner">
+        <div class="about-media">
+          <div class="camera-frame" aria-label="Portrait placeholder image frame">
+            <span class="camera-frame__corner camera-frame__corner--tl" aria-hidden="true"></span>
+            <span class="camera-frame__corner camera-frame__corner--tr" aria-hidden="true"></span>
+            <span class="camera-frame__corner camera-frame__corner--bl" aria-hidden="true"></span>
+            <span class="camera-frame__corner camera-frame__corner--br" aria-hidden="true"></span>
+            <div class="camera-frame__rec" aria-label="Recording indicator">
+              <span>REC</span>
+              <span class="camera-frame__dot" aria-hidden="true"></span>
+            </div>
+            <img class="camera-frame__image" id="about-image" src="asset/halaman tentang saya 2/foto saya dengan rasio 3 4.png" alt="Ares Ziandika Rabbani portrait" loading="eager" />
+          </div>
+        </div>
+
+        <div class="about-content">
+          <h2 class="about-title" id="about-title">ABOUT ME</h2>
+
+          <div class="about-description">
+            <p>Saya Ares Ziandika Rabbani, siswa jurusan Rekayasa Perangkat Lunak yang memiliki ketertarikan pada perpaduan antara teknologi teknis dan visual storytelling, khususnya dalam bidang Web Development dan Video Editing.</p>
+            <p>Bagi saya, kedua bidang tersebut memiliki kesamaan dalam prosesnya. Keduanya membutuhkan kemampuan problem solving, ketelitian, kreativitas, serta kemauan untuk terus belajar dan beradaptasi. Perkembangan teknologi dan tren visual yang terus berubah membuat saya terbiasa untuk mempelajari hal-hal baru, mencoba pendekatan yang berbeda, dan terus meningkatkan kemampuan agar dapat menghasilkan karya yang tidak hanya berfungsi dengan baik, tetapi juga memiliki nilai visual dan pengalaman yang menarik bagi pengguna.</p>
+          </div>
+
+          <div class="about-experience" aria-label="Years of experience statistic">
+            <span class="about-experience__label">EXPERIENCE</span>
+            <span class="about-experience__value">2+</span>
+            <span class="about-experience__meta">Years</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="skills-section__inner">
+        <p class="skills-kicker">SKILLS</p>
+
+        <div class="skills-grid" aria-label="Skill categories">
+          <div class="skill-card-wrapper skill-card-wrapper--creative">
+            <div class="skill-glow skill-glow--creative" aria-hidden="true"></div>
+            <div class="skill-card-badges skill-card-badges--creative" aria-hidden="true">
+              <span class="skill-badge" style="--delay: 0ms">[CAPCUT]</span>
+              <span class="skill-badge" style="--delay: 90ms">[PICSART]</span>
+              <span class="skill-badge" style="--delay: 180ms">[SNAPSEED]</span>
+            </div>
+            <article class="skill-card skill-card--creative" tabindex="0">
+              <div class="skill-card__logo-container">
+                <img class="skill-card__logo" src="asset/halaman skill 3/creative-design for creative logo.png" alt="Creative design logo" loading="lazy" />
+              </div>
+              <h3 class="skill-card__title">CREATIVE</h3>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__description">Creating and editing visual content through photography, video editing, and visual storytelling.</p>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__label">TOOLS / SOFTWARE</p>
+              <div class="skill-card__tools">
+                <span>CapCut</span>
+                <span>PicsArt</span>
+                <span>Snapseed</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-card-wrapper skill-card-wrapper--web">
+            <div class="skill-glow skill-glow--web" aria-hidden="true"></div>
+            <div class="skill-card-badges skill-card-badges--web" aria-hidden="true">
+              <span class="skill-badge" style="--delay: 0ms">[HTML]</span>
+              <span class="skill-badge" style="--delay: 90ms">[CSS]</span>
+              <span class="skill-badge" style="--delay: 180ms">[JS]</span>
+              <span class="skill-badge" style="--delay: 270ms">[PHP]</span>
+              <span class="skill-badge" style="--delay: 360ms">[MYSQL]</span>
+            </div>
+            <article class="skill-card skill-card--web" tabindex="0">
+              <div class="skill-card__logo-container">
+                <img class="skill-card__logo" src="asset/halaman skill 3/camera-icon-for video graph logo.png" alt="Web development logo" loading="lazy" />
+              </div>
+              <h3 class="skill-card__title">WEB DEVELOPMENT</h3>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__description">Building responsive web experiences with a focus on structure, interaction, usability, and visual presentation.</p>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__label">TOOLS / TECHNOLOGIES</p>
+              <div class="skill-card__tools">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="skill-card-wrapper skill-card-wrapper--vibe">
+            <div class="skill-glow skill-glow--vibe" aria-hidden="true"></div>
+            <div class="skill-card-badges skill-card-badges--vibe" aria-hidden="true">
+              <span class="skill-badge" style="--delay: 0ms">[ANTIGRAVITY]</span>
+              <span class="skill-badge" style="--delay: 80ms">[STITCH]</span>
+              <span class="skill-badge" style="--delay: 160ms">[CLAUDE]</span>
+              <span class="skill-badge" style="--delay: 240ms">[GPT]</span>
+              <span class="skill-badge" style="--delay: 320ms">[GEMINI]</span>
+            </div>
+            <article class="skill-card skill-card--vibe" tabindex="0">
+              <div class="skill-card__logo-container">
+                <img class="skill-card__logo" src="asset/halaman skill 3/vibe-code  for logo vibe code.png" alt="Vibe coding logo" loading="lazy" />
+              </div>
+              <h3 class="skill-card__title">VIBE CODING</h3>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__description">Using AI-assisted development workflows to explore ideas, prototype interfaces, and accelerate the development process.</p>
+              <div class="skill-card__rule" aria-hidden="true"></div>
+              <p class="skill-card__label">TOOLS / TECHNOLOGIES</p>
+              <div class="skill-card__tools">
+                <span>Antigravity</span>
+                <span>Stitch</span>
+                <span>Claude</span>
+                <span>GPT</span>
+                <span>Gemini</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="projects-section__inner">
+        <div class="projects-header">
+          <p class="projects-kicker">SELECTED WORKS</p>
+          <h2 class="projects-title" id="projects-title">PROJECTS</h2>
+        </div>
+
+        <div class="project-tabs" role="tablist" aria-label="Project categories">
+          <button type="button" class="project-tab is-active" data-category="web" role="tab" aria-selected="true" aria-controls="project-panel">WEB DEVELOPMENT</button>
+          <button type="button" class="project-tab" data-category="photography" role="tab" aria-selected="false" aria-controls="project-panel">PHOTOGRAPHY</button>
+          <button type="button" class="project-tab" data-category="videography" role="tab" aria-selected="false" aria-controls="project-panel">VIDEOGRAPHY</button>
+        </div>
+
+        <div class="project-panel" id="project-panel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-section__inner">
+        <div class="contact-header">
+          <p class="contact-kicker">CONTACT</p>
+          <h2 class="contact-title" id="contact-title">
+            YOU CAN'T SEE ME,<br />
+            BUT YOU CAN CONTACT ME.
+          </h2>
+        </div>
+
+        <div class="contact-cards" aria-label="Contact methods">
+          <a class="contact-card contact-card--instagram" href="https://instagram.com/ares_z_r" target="_blank" rel="noreferrer noopener" aria-label="Open Instagram profile">
+            <img class="contact-card__logo" src="asset/halaman contact 5/instagram-logo.png" alt="Instagram logo" loading="lazy" />
+            <span class="contact-card__name">Instagram</span>
+            <span class="contact-card__value">@ares_z_r</span>
+            <span class="contact-card__meta">SOCIAL / PORTFOLIO</span>
+          </a>
+
+          <a class="contact-card contact-card--whatsapp" href="https://wa.me/6285161356921" target="_blank" rel="noreferrer noopener" aria-label="Open WhatsApp contact">
+            <img class="contact-card__logo" src="asset/halaman contact 5/whatsapp-logo-1-1.png" alt="WhatsApp logo" loading="lazy" />
+            <span class="contact-card__name">WhatsApp</span>
+            <span class="contact-card__value">+62 851-6135-6921</span>
+            <span class="contact-card__meta">MESSAGE / DIRECT</span>
+          </a>
+
+          <a class="contact-card contact-card--gmail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=aresziandika9@gmail.com" target="_blank" rel="noreferrer noopener" aria-label="Compose Gmail message">
+            <img class="contact-card__logo" src="asset/halaman contact 5/pngtree-gmail-logo.jpg" alt="Gmail logo" loading="lazy" />
+            <span class="contact-card__name">Gmail</span>
+            <span class="contact-card__value">aresziandika9@gmail.com</span>
+            <span class="contact-card__meta">EMAIL / INQUIRY</span>
+          </a>
+        </div>
+      </div>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="site-footer__inner">
+          <p class="site-footer__brand">A/RES</p>
+          <div class="site-footer__meta-wrap">
+            <p class="site-footer__meta">© 2026 Ares Ziandika Rabbani</p>
+            <p class="site-footer__text">Creative &amp; Web Development</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
